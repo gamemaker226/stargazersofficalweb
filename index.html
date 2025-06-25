@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stargazers - Loading</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0d001a, #32004b);
+    color: #9b4dff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    letter-spacing: 6px;
+  }
+
+  .loading-text {
+    font-size: 24px;
+    margin-bottom: 60px;
+    animation: blink 1.2s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+  }
+
+  .enter-btn {
+    background-color: #9b4dff;
+    border: none;
+    padding: 18px 50px;
+    font-size: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 4px 15px rgba(155, 77, 255, 0.7);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .enter-btn:hover {
+    background-color: #b87aff;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <h1>STARGAZERS</h1>
+  <div class="loading-text">LOADING...</div>
+
+  <button class="enter-btn" onclick="location.href='main.html'">ENTER</button>
+
+</body>
+</html>
